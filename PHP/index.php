@@ -1,3 +1,5 @@
+//Aqui estaremos manejando nuestras pruebas
+
 <?php
 //Aqui tenemos como se invocan las dependencias en PHP
     require_once('Car.php');
@@ -5,7 +7,7 @@
 
 
     //Esta seria la invocacion e instanciacion del objeto car la cual recuerda mucho a su forma en Java
-    $car = new Car("AW456", new Account("Andres Herrera", "AMS123"));
+    $car = new car("AW456", new Account("Andres Herrera", "AMS123"));
     //Aqui podemos ver la invocacion del metodo de car y si, definitivamente el this-> representa this. de java
     $car->PrintDataCar();
 

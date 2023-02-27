@@ -1,6 +1,6 @@
 <?php
 
-class Account {
+class account {
     public $id;
     public $name;
     public $document;

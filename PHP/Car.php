@@ -1,11 +1,13 @@
 <?php
-
-class Car {
+//Invocamos la clase account para tener sus cosas disponibles
+require_once('account.php');
+class car {
     public $id;
     public $license;
     public $driver;
     public $passegenger;
 
+    //Metodo constructor
     public function __construct($license, $driver) {
         $this->license = $license;
         $this->driver = $driver;
