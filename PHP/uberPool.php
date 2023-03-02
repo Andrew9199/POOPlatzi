@@ -1,7 +1,6 @@
 <?php
-//Debemos poner la dependencia llamandola de esta forma, su manera de fucnionar es similar a export de java
 require_once('car.php');
-class UberX extends Car {
+class UberPool extends Car {
     //Declaracion de los atributos propios de UberX
     public $brand;
     public $model;

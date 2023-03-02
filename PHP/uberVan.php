@@ -1,18 +1,17 @@
 <?php
-//Debemos poner la dependencia llamandola de esta forma, su manera de fucnionar es similar a export de java
 require_once('car.php');
-class UberX extends Car {
+class UberVan extends Car {
     //Declaracion de los atributos propios de UberX
-    public $brand;
-    public $model;
+    public $typeCardAccepted;
+    public $seatsMaterial;
 
     //Usamos la funcion de Car como base para pasarle los parametros propios de Uber X
-    public function __construct($license, $driver, $brand, $model) {
+    public function __construct($license, $driver, $typeCardAccepted, $seatsMaterial) {
         //Aqui en lugar de super usamos parent
         parent::__construct($license, $driver);
         //Y designamos los nuevos atributos a las variables correspondientes
-        $this->brand = $brand;
-        $this->model = $model;
+        $this->typeCardAccepted = $typeCardAccepted;
+        $this->seatsMaterial = $seatsMaterial;
       }
-}
+    }
 ?>
