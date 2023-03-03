@@ -9,3 +9,7 @@ car.printDataCar();
 var uberX = new UberX("Aw345", new Account("Andres Herrera", "123543"), "Chevrolet","Spark")
 uberX.passenger = 4;
 uberX.printDataCar();
+
+var uberfinolis = new UberBlack("ASD538", new Account("Carlos Santana", "737130", "Debito o credito" ,"Cuero"))
+uberfinolis.passenger = 2;
+uberfinolis.printDataCar();
