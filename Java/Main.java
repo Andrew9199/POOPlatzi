@@ -18,5 +18,9 @@ class Main {
         UberX uberX1 = new UberX("1657g", new Account("Alex", "345280"), "Ferrary", "AXD45");
         uberX1.setPassenger(4);
         uberX1.printDataCar();
+
+        UberVan ubervan1 = new UberVan("212312", new Account("Alexis", "23454"));
+        ubervan1.setPassenger(6);
+        ubervan1.printDataCar();
     }
 }

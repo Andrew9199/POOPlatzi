@@ -15,4 +15,12 @@ class UberX extends Car /*Nos sale un error que nos dice que necesitamos un meto
 
         //Si le damos a super. tenemos acceso a todo lo que esta dentro de la clase Car
     }
+
+    //33 Aqui tambien estamos usando el polimorfismo ya que agregamos que tambien se impriman otros atributos ademas de los que de por si imprime el metodo printDataCar()
+    @Override
+    void printDataCar() {
+        // TODO Auto-generated method stub
+        super.printDataCar();
+        System.out.println(" y el modelo es " + model + " y la marca es " + brand);
+    }
 }
