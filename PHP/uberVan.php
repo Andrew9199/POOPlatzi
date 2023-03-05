@@ -13,5 +13,28 @@ class UberVan extends Car {
         $this->typeCardAccepted = $typeCardAccepted;
         $this->seatsMaterial = $seatsMaterial;
       }
+
+      public function printDataCar()
+      {
+        if ($this -> passenger != null){
+          //AL parecer el "." es el + de PHP y de la forma que esta comentada
+          echo "--> Licencia: {$this->license} Driver: {$this->driver->name} Tipo de tajeta aceptada {$this->typeCardAccepted} Material de los asientos {$this->seatsMaterial}";
+          /*echo "Licencia:" .$this->license ."Driver: " .$this->driver->name;*/
+        }
+      }
+
+      public function getPassenger(){
+        return $this->passenger;
+      }
+
+      public function setPassenger($passenger){
+
+        if ($passenger == 6) {
+          $this->passenger = $passenger;
+        }
+        else {
+          echo 'Necesitas asignar 6 pasajeros';
+        }
     }
+  }
 ?>

@@ -14,5 +14,28 @@ class UberX extends Car {
         $this->brand = $brand;
         $this->model = $model;
       }
+
+      public function printDataCar()
+      {
+        if ($this -> passenger != null){
+          //AL parecer el "." es el + de PHP y de la forma que esta comentada
+          echo "--> Licencia: {$this->license} Driver: {$this->driver->name} brand {$this->brand} model {$this->model}";
+          /*echo "Licencia:" .$this->license ."Driver: " .$this->driver->name;*/
+        }
+         //Aqui no se pone un else ya que si no se cumple la condicion solo se quiere que el codigo no se ejecute
+      }
+
+      public function getPassenger(){
+        return $this->passenger;
+      }
+
+      public function setPassenger($passenger){
+
+        if ($passenger == 4) {
+          $this->passenger = $passenger;
+        }
+        else {
+          echo 'Necesitas asignar 4 pasajeros';
+        }
+      }
 }
-?>
